@@ -1,0 +1,146 @@
+/* General */
+body {
+    background-color: #dee9ed;
+    font-family: Muli;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-y: scroll;
+    margin: auto;
+    width: 65%;
+    border: 3px solid #444;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* Header */
+.content {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+header .divider {
+    border-bottom: solid 3px #444;
+    width: 100%;
+}
+
+.mugshot {
+    width: 25%;
+    float: left;
+}
+
+header .name {
+    text-transform: uppercase;
+    width: 75%;
+    text-align: right;
+    float: right;
+}
+
+header .picture {
+    background-size: cover;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+/* Footer */
+footer {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Main */
+
+main .container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 1% 2%;
+}
+.mainImg {
+    width: auto;
+}
+
+
+/* Tiles */
+.skills {
+    width: 1200px;
+    display:grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.skills .tile {
+    width:auto;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+.skills .tile h3 {
+    font-size: 18px;
+    color: #444;
+}
+.skills img {
+    
+}
+
+/* Media queries */
+
+/* for widths up to 600px */
+@media screen and (max-width: 600px) {
+    header .mugshot {
+        width: 50%;
+    }
+    header .name {
+    width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+     
+    h2 {
+        font-size: 15px;
+    }
+    .skills {
+        width:auto;
+        display:grid;
+        grid-template-rows: auto;    
+    }
+    article {
+        font-size: 10px;
+    }
+    footer {
+        
+    }
+}
+
+/* for widths between 600px and 800px */
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .skills {
+        width:auto;
+        display:grid;
+        grid-template-rows: auto;    
+    }
+}
+
+/* for widths up to 1900px to make the tiles fit*/
+@media screen and (max-width: 1900px) {
+    .skills {
+        width:auto;
+        display:grid;
+        grid-template-rows: auto;    
+    }
+}
