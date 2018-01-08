@@ -41,7 +41,10 @@ header .divider {
     width: 25%;
     float: left;
 }
-
+main .divider {
+    border-bottom: solid 3px #444;
+    width: 100%;
+}
 header .name {
     text-transform: uppercase;
     width: 75%;
@@ -70,12 +73,34 @@ main .container {
     max-width: 1200px;
     margin: 0;
     padding: 1% 2%;
+    text-align: left;
 }
 .mainImg {
     width: auto;
 }
-
-
+.experience {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.experience {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+section .work-experience {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.experience {
+    font-size: 20px;
+}
+.comment {
+    text-align: center;
+    font-size: 18px;
+}
+.job-title {
+    text-decoration-style: double;
+}
 /* Tiles */
 .skills {
     width: 1200px;
@@ -92,9 +117,6 @@ main .container {
 .skills .tile h3 {
     font-size: 18px;
     color: #444;
-}
-.skills img {
-    
 }
 
 /* Media queries */
