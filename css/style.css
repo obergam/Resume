@@ -81,6 +81,10 @@ section .work-experience {
     display: flex;
 }
 
+.work-experience:hover {
+    background: #999999;
+    animation-play-state: running;
+    }
 .comment {
     text-align: center;
     font-size: 18px;
